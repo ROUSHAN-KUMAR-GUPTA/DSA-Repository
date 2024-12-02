@@ -1,0 +1,45 @@
+class Solution {
+    public static void twoSum(int nums[],int i,int tar,List<List<Integer>> Li){
+        int j=nums.length-1;
+        while(i<j){
+            if(nums[i]+nums[j]<tar){
+                i++;
+            }else if(nums[i]+nums[j]>tar){
+                j--;
+            }else{
+                ArrayList<Integer> li=new ArrayList<>();
+                li.add(-tar);
+                li.add(nums[i]);
+                li.add(nums[j]);
+                Li.add(li);
+               // Li.add(Arrays.asList(-tar,nums[i],nums[j]));
+                while(i<j && nums[i]==nums[i+1]){
+                    i++;
+                }
+                while(i<j && nums[j]==nums[j-1]){
+                    j--;
+                }
+                i++;
+                j--;
+            }
+
+        }
+    }
+    public List<List<Integer>> threeSum(int[] nums) {
+        Arrays.sort(nums);
+        int n=nums.length;
+        if(n<3){
+            return new ArrayList<>();
+        }
+        List<List<Integer>> Li=new ArrayList<>();
+        for(int i=0;i<n-2;i++){
+            int tar=-nums[i];
+            if(i!=0 && nums[i]==nums[i-1]){
+                continue;
+            }
+            twoSum(nums,i+1,tar,Li);
+        }
+        return Li;
+        
+    }
+}
