@@ -1,0 +1,49 @@
+class Solution {
+    public void setZeroes(int[][] matrix) {
+        int x=matrix.length;
+        int y= matrix[0].length;
+        int arr[][]=new int[x][y];
+        int m;
+        int n;
+        //1step-copy
+         for(int i=0;i<matrix.length;i++){
+              for(int j=0;j<matrix[0].length;j++){
+                arr[i][j]=matrix[i][j];
+                }
+             }
+             //step2-check matrix
+
+        for(int i=0;i<matrix.length;i++){
+            for(int j=0;j<matrix[0].length;j++){
+                if(matrix[i][j]==0){
+                     m=i;
+                     n=j;
+                    
+              for(int p=0;p<x;p++){
+              for(int q=0;q<y;q++){
+                arr[p][n]=0;
+                arr[m][q]=0;
+                }
+              }
+             }
+            }
+        }
+        //print arr
+       for(int i=0;i<x;i++){
+              for(int j=0;j<y;j++){
+              //  System.out.print(arr[i][j]);
+             matrix[i][j]= arr[i][j];
+
+                }
+              //  System.out.println();
+        }
+       /* for(int i=0;i<x;i++){
+              for(int j=0;j<y;j++){
+              System.out.print(matrix[i][j]);
+                }
+                System.out.println();
+        }
+        */
+        
+    }
+}
