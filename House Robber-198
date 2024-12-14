@@ -1,0 +1,20 @@
+class Solution {
+    public int SolveTab(int nums[],int n){
+        int Tab[]=new int[n+1];
+        Tab[0]=0;
+        Tab[1]=nums[0];
+        for(int i=2;i<=n;i++){
+            // include
+            int steal=nums[i-1]+Tab[i-2];
+            //exclude
+            int skip=Tab[i-1];
+            Tab[i]=Math.max(steal,skip);
+        }
+        return Tab[n];
+    }
+    public int rob(int[] nums) {
+        int n=nums.length;
+        int res=SolveTab(nums,n);
+        return res;
+    }
+}
