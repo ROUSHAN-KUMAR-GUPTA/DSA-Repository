@@ -1,0 +1,34 @@
+
+import java.util.*;
+class Solution {
+    public String[] findRelativeRanks(int[] score) {
+        int max=Integer.MIN_VALUE;
+        for(int element:score){
+            max=Math.max(max,element);
+        }
+        int maxval=max;
+        int countarray[]=new int[maxval+1];
+        for(int i=0;i<score.length;i++){
+            countarray[score[i]]=i+1;
+        }
+         String res[]=new String[score.length];
+         int rank=1;
+        for(int i=maxval;i>=0;i--){
+            if(countarray[i]!=0){
+                int originalindex=countarray[i]-1;
+                if(rank==1){
+                 res[originalindex]= "Gold Medal";
+                }else if (rank==2){
+                    
+                 res[originalindex]= "Silver Medal";
+                }else if(rank==3){
+                 res[originalindex]= "Bronze Medal";
+                }else{
+                    res[originalindex]=Integer.toString(rank);
+                }
+                rank++;
+            }
+        }
+        return res;
+    }
+}
