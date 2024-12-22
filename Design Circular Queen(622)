@@ -1,0 +1,67 @@
+class MyCircularQueue {
+     int arr[];
+     int size;
+     int F;
+     int R;
+
+    public MyCircularQueue(int k) {
+        arr=new int[k];
+        size=k;
+        F=-1;
+        R=-1;
+    }
+    
+    public boolean enQueue(int value) {
+        if((R+1)%size==F){
+            return false;
+        }else{
+             if(F==-1){
+            F=0;
+        }
+        R=(R+1)%size;
+        arr[R]=value;
+        }
+        return true;
+        
+        
+    }
+    
+    public boolean deQueue() {
+        if(R==-1 && F==-1){
+            return false;
+        }else{
+           // int frnt =arr[F];
+            if(R==F){
+                R=F=-1;
+            }else{
+                F=(F+1)%size;
+            }
+        }
+        return true;
+        
+    }
+    
+    public int Front() {
+        if(R==-1 && F==-1){
+            return -1;
+        }
+        return arr[F];
+        
+    }
+    
+    public int Rear() {
+        if(R==-1 && F==-1){
+            return -1;
+        }
+        return arr[R];
+    }
+    
+    public boolean isEmpty() {
+        return R==-1 && F==-1;
+    }
+    
+    public boolean isFull() {
+        return (R+1)%size==F;
+    }
+}
+
