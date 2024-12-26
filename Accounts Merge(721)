@@ -1,0 +1,45 @@
+class Solution {
+    public void DFS(String src,HashMap<String,List<String>> adjMap,HashSet <String> visited,List<String> subString){
+        visited.add(src);
+        subString.add(src);
+        if(!adjMap.containsKey(src)){
+            return;
+        }
+        for(String neigh:adjMap.get(src)){
+            if(!visited.contains(neigh)){
+                DFS(neigh,adjMap,visited,subString);
+            }
+        }
+    }
+    public List<List<String>> accountsMerge(List<List<String>> accounts) {
+        HashMap<String , List<String>> adjMap=new HashMap<>();
+        for(List<String> account: accounts){
+            String firstEmail=account.get(1);
+            for(int i=2;i<account.size();i++){
+                String email=account.get(i);
+                if(!adjMap.containsKey(firstEmail)){
+                    adjMap.put(firstEmail,new ArrayList<>());
+                }
+                adjMap.get(firstEmail).add(email);
+                if(!adjMap.containsKey(email)){
+                    adjMap.put(email,new ArrayList<>());
+                }
+                adjMap.get(email).add(firstEmail);
+            }
+        }
+        List<List<String>> res=new ArrayList<>();
+        HashSet<String> visited=new HashSet<>();
+        for(List<String> account: accounts){
+            String firstEmail=account.get(1);
+            if(!visited.contains(firstEmail)){
+                List<String> subString=new ArrayList<>();
+                DFS(firstEmail,adjMap,visited,subString);
+                Collections.sort(subString);
+                String Name=account.get(0);
+                subString.add(0,Name);
+                res.add(subString);
+            }
+        }
+        return res;
+    }
+}
