@@ -2,7 +2,7 @@ class Solution {
     public List<Integer> spiralOrder(int[][] matrix) {
         int sr=0;
         int sc=0;
-        int er=matrix.length-1;
+        int er=matrix.length-1; 
         int ec=matrix[0].length-1;
         ArrayList<Integer> ll=new ArrayList<>();
          while(sr<=er && sc<=ec){
