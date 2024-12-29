@@ -6,7 +6,7 @@ class Solution {
         int ec=matrix[0].length-1;
         ArrayList<Integer> ll=new ArrayList<>();
          while(sr<=er && sc<=ec){
-        //top
+        //top 
         for(int j=sc;j<=ec;j++){ 
          ll.add(matrix[sr][j]);
         }
