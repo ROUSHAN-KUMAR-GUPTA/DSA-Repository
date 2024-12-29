@@ -7,7 +7,7 @@ class Solution {
         ArrayList<Integer> ll=new ArrayList<>();
          while(sr<=er && sc<=ec){
         //top
-        for(int j=sc;j<=ec;j++){
+        for(int j=sc;j<=ec;j++){ 
          ll.add(matrix[sr][j]);
         }
         //right
