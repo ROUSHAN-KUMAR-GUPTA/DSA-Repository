@@ -7,7 +7,7 @@ class Solution {
             return;
         }
 
-        //task
+        //task 
         temp.add(nums[idx]);
         generate(nums,idx+1,length,result,temp);
         temp.remove(temp.size()-1);
