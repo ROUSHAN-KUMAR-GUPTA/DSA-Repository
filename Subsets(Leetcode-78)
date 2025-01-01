@@ -9,7 +9,7 @@ class Solution {
 
         //task 
         temp.add(nums[idx]);
-        generate(nums,idx+1,length,result,temp);
+        generate(nums,idx+1,length,result,temp); 
         temp.remove(temp.size()-1);
         //temp.add(nums[idx]);
         generate(nums,idx+1,length,result,temp);
