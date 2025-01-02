@@ -1,4 +1,4 @@
-class Solution {
+ class Solution {
     public void CombSum(int[] candidates, int target,int i,ArrayList<Integer> li,List<List<Integer>> res){
         if(i==candidates.length){
             if(target==0){
