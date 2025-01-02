@@ -5,7 +5,7 @@ class Solution {
                 res.add(new ArrayList<Integer>(li));
             }
             return;
-        }
+        } 
         //pick
         if(candidates[i]<=target){
             li.add(candidates[i]);
