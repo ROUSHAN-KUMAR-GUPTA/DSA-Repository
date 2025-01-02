@@ -7,7 +7,7 @@ class Solution {
             return;
         } 
         //pick
-        if(candidates[i]<=target){
+        if(candidates[i]<=target){ 
             li.add(candidates[i]);
             CombSum(candidates,target-candidates[i],i,li,res);
             li.remove(li.size()-1);
