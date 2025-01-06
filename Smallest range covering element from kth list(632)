@@ -3,7 +3,7 @@ class Solution {
         // if new numbers are answer
         if (b - a < d - c) {
             return true;
-        } else if (b - a == d - c) {
+        } else if (b - a == d - c) { 
             if (a < c) {
                 return true;
             }
