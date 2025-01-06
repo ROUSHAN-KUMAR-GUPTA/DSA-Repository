@@ -7,7 +7,7 @@ class Solution {
             if (a < c) {
                 return true;
             }
-        }
+        } 
         // new number doesn't have minimum difference uptill now
         return false;
     } 
