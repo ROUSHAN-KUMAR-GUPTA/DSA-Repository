@@ -13,7 +13,7 @@ class Solution {
     } 
  
     public int[] smallestRange(List<List<Integer>> a) {
-        int ansx = -100000, ansy = 100000;
+        int ansx = -100000, ansy = 100000; 
         int total_list = a.size();
 
         List<int[]> vp = new ArrayList<>();
