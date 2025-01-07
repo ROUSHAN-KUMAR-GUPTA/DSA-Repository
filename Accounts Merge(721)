@@ -6,7 +6,7 @@ class Solution {
             return;
         } 
         for(String neigh:adjMap.get(src)){  
-            if(!visited.contains(neigh)){
+            if(!visited.contains(neigh)){ 
                 DFS(neigh,adjMap,visited,subString);
             }
         }
