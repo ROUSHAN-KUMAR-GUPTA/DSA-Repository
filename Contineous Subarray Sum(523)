@@ -6,7 +6,7 @@ class Solution {
             prefix+=nums[i];
             int rem=prefix % k; 
             if(rem==0 && i>=1) {
-            return true; 
+            return true;  
             } 
             if(hm.containsKey(rem)){
                 int idx=hm.get(rem);
