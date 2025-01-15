@@ -7,7 +7,7 @@ class Solution {
             int rem=prefix % k;
             if(rem==0 && i>=1) {
             return true;
-            }
+            } 
             if(hm.containsKey(rem)){
                 int idx=hm.get(rem);
                 if((i-idx)>=2){
