@@ -9,7 +9,7 @@ class Solution {
                 return mid;  
             }
             if(nums[mid]<target){  
-                si= mid+1;
+                si= mid+1; 
             }else{
                 ei= mid-1;
             }
