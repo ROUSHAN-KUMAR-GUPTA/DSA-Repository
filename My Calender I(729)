@@ -4,7 +4,7 @@ class MyCalendar {
     calcy = new TreeMap();
 
     }
-    
+     
     public boolean book(int start, int end) {
     Integer prevBook = calcy.floorKey(start);
     Integer nextBook = calcy.ceilingKey(start);
