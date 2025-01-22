@@ -5,7 +5,7 @@ class Solution {
             for(int j=0;j<board[0].length;j++){
                 if(board[i][j]=='X'){
                 if(i==0 && j==0){   
-                    ans++;
+                    ans++; 
                 }else if(i==0){ 
                     if(board[i][j-1]!='X'){ 
                         ans++;
