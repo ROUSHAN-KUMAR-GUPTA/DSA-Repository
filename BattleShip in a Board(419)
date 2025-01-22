@@ -9,7 +9,7 @@ class Solution {
                 }else if(i==0){    
                     if(board[i][j-1]!='X'){ 
                         ans++;
-                    }
+                    } 
                 }else if(j==0){
                     if(board[i-1][j]!='X'){
                         ans++;
