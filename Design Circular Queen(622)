@@ -7,7 +7,7 @@ class MyCircularQueue {
     public MyCircularQueue(int k) {
         arr=new int[k];
         size=k;
-        F=-1;
+        F=-1; 
         R=-1;
     }
     
