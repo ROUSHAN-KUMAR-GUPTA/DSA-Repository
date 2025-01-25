@@ -1,6 +1,6 @@
 class MyCircularQueue {
      int arr[];
-     int size;
+     int size; 
      int F;
      int R;
   
