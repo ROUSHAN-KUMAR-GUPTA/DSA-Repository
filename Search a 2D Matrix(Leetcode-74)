@@ -8,7 +8,7 @@ class Solution {
                 return true; 
             }else if(matrix[row][col]<target){  
                 row++; 
-            }else{
+            }else{ 
                 col--;
             }
 
