@@ -6,7 +6,7 @@ class Solution {
             int st=0;
             int ed=n-1;
             while(st<ed){ 
-                int temp= image[i][st]; 
+                int temp= image[i][st];  
                 image[i][st]=image[i][ed];   
                 image[i][ed]=temp; 
                 st++;
