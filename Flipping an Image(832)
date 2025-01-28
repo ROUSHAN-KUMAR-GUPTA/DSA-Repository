@@ -8,7 +8,7 @@ class Solution {
             while(st<ed){
                 int temp= image[i][st];
                 image[i][st]=image[i][ed]; 
-                image[i][ed]=temp;
+                image[i][ed]=temp; 
                 st++;
                 ed--;
             }
