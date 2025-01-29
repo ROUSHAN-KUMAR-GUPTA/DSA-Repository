@@ -8,7 +8,7 @@ class Solution {
                 digits[i]++;   
                 break; 
             }else{
-                digits[i]=0;
+                digits[i]=0; 
             }
             if(digits[0]==0){
                 int arr[]= new int[n+1];
