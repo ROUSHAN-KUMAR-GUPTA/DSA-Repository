@@ -7,7 +7,7 @@ class Solution {
         if(row<0 || row>=rows || col<0||col>=cols || grid[row][col]==0 ||vis[row][col]){
             return 0; 
         }  
-        vis[row][col]=true; 
+        vis[row][col]=true;  
         val++;   
         int adjList[][]={  
             {row-1,col},{row+1,col},{row,col-1},{row,col+1}
