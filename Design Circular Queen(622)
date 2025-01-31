@@ -8,7 +8,7 @@ class MyCircularQueue {
         arr=new int[k];  
         size=k; 
         F=-1; 
-        R=-1;
+        R=-1; 
     }
     
     public boolean enQueue(int value) {
