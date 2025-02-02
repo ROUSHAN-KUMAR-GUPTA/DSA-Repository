@@ -5,7 +5,7 @@ class Solution {
             array[i] = String.valueOf(nums[i]); 
         }   
         Arrays.sort(array,(a,b)-> (b+a).compareTo(a+b));   
-        if(array[0].equals("0")){ 
+        if(array[0].equals("0")){  
             return "0"; 
         }
         StringBuilder largest = new StringBuilder();
