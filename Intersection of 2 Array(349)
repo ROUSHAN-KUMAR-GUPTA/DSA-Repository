@@ -3,7 +3,7 @@ class Solution {
         HashSet<Integer> hset1=new HashSet<>();
         HashSet<Integer> hset2=new HashSet<>();
         ArrayList<Integer> li=new ArrayList<>();
-        for(int i=0;i<nums1.length;i++){
+        for(int i=0;i<nums1.length;i++){ 
             hset1.add(nums1[i]);    
         }         
         for(int i=0;i<nums2.length;i++){    
