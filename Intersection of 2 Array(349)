@@ -8,7 +8,7 @@ class Solution {
         }        
         for(int i=0;i<nums2.length;i++){
             hset2.add(nums2[i]); 
-        }
+        } 
         for(Integer hs1:hset1){
             if(hset2.contains(hs1)){
                 li.add(hs1);
