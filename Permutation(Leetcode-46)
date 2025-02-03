@@ -4,7 +4,7 @@ class Solution {
         solve(nums,0,res);
         return res;
     }
-    public void solve(int nums[], int ind,List<List<Integer>> res){
+    public void solve(int nums[], int ind,List<List<Integer>> res){ 
         int n=nums.length;
         //base
         if(ind==n){
