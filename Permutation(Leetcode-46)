@@ -6,7 +6,7 @@
     }
     public void solve(int nums[], int ind,List<List<Integer>> res){ 
         int n=nums.length;    
-        //base 
+        //base  
         if(ind==n){
             List<Integer> sublist=new ArrayList<>();  
             for(int el:nums){
