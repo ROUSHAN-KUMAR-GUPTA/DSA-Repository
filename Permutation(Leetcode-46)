@@ -5,7 +5,7 @@ class Solution {
         return res;
     }
     public void solve(int nums[], int ind,List<List<Integer>> res){ 
-        int n=nums.length;  
+        int n=nums.length;   
         //base 
         if(ind==n){
             List<Integer> sublist=new ArrayList<>();  
