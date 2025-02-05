@@ -6,7 +6,7 @@ class Solution {
         for(int element:score){
             max=Math.max(max,element); 
         }     
-        int maxval=max; 
+        int maxval=max;  
         int countarray[]=new int[maxval+1];   
         for(int i=0;i<score.length;i++){
             countarray[score[i]]=i+1;  
