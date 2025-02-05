@@ -9,7 +9,7 @@ class Solution {
         int maxval=max; 
         int countarray[]=new int[maxval+1];  
         for(int i=0;i<score.length;i++){
-            countarray[score[i]]=i+1;
+            countarray[score[i]]=i+1; 
         }
          String res[]=new String[score.length];
          int rank=1;
