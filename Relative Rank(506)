@@ -4,7 +4,7 @@ class Solution {
     public String[] findRelativeRanks(int[] score) {
         int max=Integer.MIN_VALUE;
         for(int element:score){
-            max=Math.max(max,element);
+            max=Math.max(max,element); 
         }     
         int maxval=max; 
         int countarray[]=new int[maxval+1];   
