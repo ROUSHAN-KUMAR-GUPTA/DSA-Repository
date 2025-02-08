@@ -9,7 +9,7 @@ class Solution {
             if (max == i)
                 count++;
         }
-
+ 
         return count;
     }
 }
