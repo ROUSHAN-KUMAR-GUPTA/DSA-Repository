@@ -6,7 +6,7 @@ class Solution {
         hm.put(0,1); 
         for(int j=0;j<nums.length;j++){   
             sum+=nums[j]; 
-            if(hm.containsKey(sum-k)){
+            if(hm.containsKey(sum-k 
                 count+=hm.get(sum-k);
             }
             hm.put(sum,hm.getOrDefault(sum,0)+1);
