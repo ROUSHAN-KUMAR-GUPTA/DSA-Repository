@@ -6,7 +6,7 @@ class Solution {
             ret=map.get(src).get(target)*pro;
          }else{
             for(String neigh:map.get(src).keySet()){  
-                if(!visited.contains(neigh)){ 
+                if(!visited.contains(neigh)){  
                     pro=pro*map.get(src).get(neigh); 
                    ret= DFS(neigh,target,visited,pro,map);
                     if(ret!=-1){
