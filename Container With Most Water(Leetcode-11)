@@ -2,7 +2,7 @@ class Solution {
     public int maxArea(int[] height) {
         int leftindex=0;
         int rightindex=height.length-1; 
-        int maxwater=0;
+        int maxwater=0; 
         while(leftindex<rightindex){ 
             int width=rightindex-leftindex;  
             int leftheight= height[leftindex];  
