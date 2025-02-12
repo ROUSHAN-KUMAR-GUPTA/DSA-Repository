@@ -5,7 +5,7 @@ class Solution {
         if(row<0 || row>=rows || col<0 || col>=cols){
             return;
         } 
-        if(image[row][col]!=curcolor){  
+        if(image[row][col]!=curcolor){   
             return;
         }
         if(vis[row][col]){
