@@ -4,7 +4,7 @@ class Solution {
     public static void DFS(int row,int col,int newcolor,int curcolor,boolean vis[][],int image[][]){
         if(row<0 || row>=rows || col<0 || col>=cols){
             return;
-        }
+        } 
         if(image[row][col]!=curcolor){  
             return;
         }
