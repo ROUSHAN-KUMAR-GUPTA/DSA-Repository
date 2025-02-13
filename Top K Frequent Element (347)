@@ -5,7 +5,7 @@ class Solution {
         public freqElements(int idx, int freq){
             this.idx = idx;
             this.freq = freq;
-        }
+        } 
         @Override 
         public int compareTo(freqElements f2){
             return this.freq - f2.freq; 
