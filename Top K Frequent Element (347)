@@ -8,7 +8,7 @@ class Solution {
         }   
         @Override 
         public int compareTo(freqElements f2){
-            return this.freq - f2.freq; 
+            return this.freq - f2.freq;  
         } 
     }
 
