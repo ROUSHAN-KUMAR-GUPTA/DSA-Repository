@@ -8,7 +8,7 @@ class Solution {
             int leftheight= height[leftindex];  
             int rightheight=height[rightindex];
             int currentwater=width*Math.min(leftheight,rightheight); 
-            maxwater=Math.max(currentwater,maxwater);
+            maxwater=Math.max(currentwater,maxwater); 
             if(leftheight<rightheight){
                 leftindex++;
             }
