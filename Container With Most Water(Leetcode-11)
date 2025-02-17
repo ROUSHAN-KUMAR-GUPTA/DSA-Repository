@@ -5,7 +5,7 @@ class Solution {
         int maxwater=0;  
         while(leftindex<rightindex){    
             int width=rightindex-leftindex;   
-            int leftheight= height[leftindex];  
+            int leftheight= height[leftindex];   
             int rightheight=height[rightindex];
             int currentwater=width*Math.min(leftheight,rightheight); 
             maxwater=Math.max(currentwater,maxwater); 
