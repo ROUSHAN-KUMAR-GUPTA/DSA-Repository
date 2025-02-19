@@ -2,7 +2,7 @@ class MyCircularDeque {
      Deque<Integer> d;
      int size;
 
-    public MyCircularDeque(int k) {
+    public MyCircularDeque(int k) { 
         d=new LinkedList<>();
         size=k; 
         
