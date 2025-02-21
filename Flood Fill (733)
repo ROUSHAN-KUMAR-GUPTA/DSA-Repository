@@ -11,7 +11,7 @@ class Solution {
         if(vis[row][col]){  
             return;  
         }  
-        vis[row][col]=true;
+        vis[row][col]=true; 
         image[row][col]=newcolor;
         // visit neighbour up right,down,left
         int adjList[][]={{row-1,col},{row,col+1},{row+1,col},{row,col-1}};
