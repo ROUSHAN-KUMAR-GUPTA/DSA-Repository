@@ -10,7 +10,7 @@ class Solution {
         }  
         if(vis[row][col]){ 
             return; 
-        }
+        } 
         vis[row][col]=true;
         image[row][col]=newcolor;
         // visit neighbour up right,down,left
