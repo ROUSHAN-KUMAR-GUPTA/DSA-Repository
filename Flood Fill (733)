@@ -9,7 +9,7 @@ class Solution {
             return;      
         }   
         if(vis[row][col]){  
-            return;   
+            return;    
         }    
         vis[row][col]=true; 
         image[row][col]=newcolor;  
