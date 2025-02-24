@@ -3,7 +3,7 @@ class Solution {
         HashMap<String, List<String>> map= new HashMap<>();
 
         for(String word : strs){
-            char[] ch= word.toCharArray();
+            char[] ch= word.toCharArray(); 
             Arrays.sort(ch); 
             String anagram= new String(ch); 
             if(!map.containsKey(anagram)){ 
