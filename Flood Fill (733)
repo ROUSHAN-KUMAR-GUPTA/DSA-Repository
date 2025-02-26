@@ -8,7 +8,7 @@ class Solution {
         if(image[row][col]!=curcolor){    
             return;      
         }    
-        if(vis[row][col]){  
+        if(vis[row][col]){   
             return;    
         }    
         vis[row][col]=true; 
