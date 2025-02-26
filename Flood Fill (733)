@@ -6,7 +6,7 @@ class Solution {
             return;
         } 
         if(image[row][col]!=curcolor){    
-            return;      
+            return;       
         }     
         if(vis[row][col]){   
             return;    
