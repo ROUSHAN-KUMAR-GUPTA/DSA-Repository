@@ -7,7 +7,7 @@ class Solution {
              
             if(nums[mid]==target){      
                 return mid;  
-            } 
+            }  
             if(nums[mid]<target){   
                 si= mid+1; 
             }else{
