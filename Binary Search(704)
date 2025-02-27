@@ -10,7 +10,7 @@ class Solution {
             }  
             if(nums[mid]<target){   
                 si= mid+1; 
-            }else{
+            }else{ 
                 ei= mid-1;
             }
         }
