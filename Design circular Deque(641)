@@ -6,7 +6,7 @@ class MyCircularDeque {
         d=new LinkedList<>();   
         size=k;       
            
-    }  
+    }   
           
     public boolean insertFront(int value) { 
         if(d.size()<size){     
