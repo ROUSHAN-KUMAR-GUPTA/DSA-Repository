@@ -7,7 +7,7 @@ class MyCircularDeque {
         size=k;          
            
     }    
-           
+            
     public boolean insertFront(int value) { 
         if(d.size()<size){     
             d.addFirst(value); 
