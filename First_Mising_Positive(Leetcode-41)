@@ -5,7 +5,7 @@ class Solution {
             if(nums[i]>0){
                 hs.add(nums[i]);
             } 
-        }    
+        }     
         Arrays.sort(nums); 
         for(int i=0;i<nums.length;i++){
             if(!hs.contains(1)){
