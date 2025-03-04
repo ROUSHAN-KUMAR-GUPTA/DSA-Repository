@@ -6,7 +6,7 @@ class Solution {
     public int DFS(int row,int col,int grid[][],boolean vis[][]){
         if(row<0 || row>=rows || col<0||col>=cols || grid[row][col]==0 ||vis[row][col]){  
             return 0;  
-        }      
+        }       
         vis[row][col]=true;        
         val++;        
         int adjList[][]={   
