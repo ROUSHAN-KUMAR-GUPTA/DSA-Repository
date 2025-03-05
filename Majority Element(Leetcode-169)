@@ -8,7 +8,7 @@ class Solution {
                 map.put(nums[i],1);  
             }  
         }  
-        int res=0; 
+        int res=0;  
         Set<Integer> keyS= map.keySet(); 
         for(Integer ks:keyS){ 
             if(map.get(ks)>nums.length/2){
