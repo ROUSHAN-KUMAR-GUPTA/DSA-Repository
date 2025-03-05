@@ -11,7 +11,7 @@ class Solution {
         int res=0;   
         Set<Integer> keyS= map.keySet(); 
         for(Integer ks:keyS){ 
-            if(map.get(ks)>nums.length/2){
+            if(map.get(ks)>nums.length/2){ 
                  res=ks;
             }
         }
