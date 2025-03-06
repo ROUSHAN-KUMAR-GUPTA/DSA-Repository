@@ -7,7 +7,7 @@ class Solution {
             }  
         }      
         Arrays.sort(nums); 
-        for(int i=0;i<nums.length;i++){
+        for(int i=0;i<nums.length;i++){ 
             if(!hs.contains(1)){
                 return 1;
             }
