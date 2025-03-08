@@ -9,6 +9,7 @@ class Solution {
         // Count the occurrence of each number
         for (int num : nums) {
             mp.put(num, mp.getOrDefault(num, 0) + 1);
+
         }
 
         List<Integer> temp = new ArrayList<>();
