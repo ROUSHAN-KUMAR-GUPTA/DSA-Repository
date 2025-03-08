@@ -4,7 +4,7 @@ class Solution {
 
     public List<List<Integer>> permuteUnique(int[] nums) {
         n = nums.length;
-        Map<Integer, Integer> mp = new HashMap<>();
+        Map<Integer, Integer> mp = new HashMap<>(); 
 
         // Count the occurrence of each number
         for (int num : nums) {
