@@ -3,7 +3,7 @@ class Solution {
         int nsr[]=new int[heights.length];
         int nsl[]=new int[heights.length]; 
         Stack <Integer> s=new Stack<>();  
-        for(int i=heights.length-1;i>=0;i--){
+        for(int i=heights.length-1;i>=0;i--){ 
             while(!s.isEmpty() && heights[s.peek()]>=heights[i]){ 
                 s.pop(); 
             } 
