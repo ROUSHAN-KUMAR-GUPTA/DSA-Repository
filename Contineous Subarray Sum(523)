@@ -8,7 +8,7 @@ class Solution {
             if(rem==0 && i>=1) {   
             return true;   
             } 
-            if(hm.containsKey(rem)){  
+            if(hm.containsKey(rem)){   
                 int idx=hm.get(rem);
                 if((i-idx)>=2){
                     return true;
