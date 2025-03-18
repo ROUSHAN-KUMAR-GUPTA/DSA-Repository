@@ -3,7 +3,7 @@ class Solution {
         int exp[]=new int[heights.length];
         for(int i=0;i<heights.length;i++){
             exp[i]=heights[i];  
-        } 
+        }  
         int count=0;       
         Arrays.sort(exp);  
         for(int j=0;j<heights.length;j++){ 
