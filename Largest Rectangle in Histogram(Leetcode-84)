@@ -9,7 +9,7 @@ class Solution {
             }   
             if(s.isEmpty()){     
                 nsr[i]=heights.length;    
-            }else{
+            }else{ 
                 nsr[i]=s.peek(); 
             }
             s.push(i);
