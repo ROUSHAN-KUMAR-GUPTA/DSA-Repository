@@ -10,7 +10,7 @@ class Solution {
             for (int i = 0; i < n; ++i) {
                 while (j < n && arr[i] >= arr[j] * mid) {
                     ++j;
-                }
+                } 
                 
                 total += n - j;
 
