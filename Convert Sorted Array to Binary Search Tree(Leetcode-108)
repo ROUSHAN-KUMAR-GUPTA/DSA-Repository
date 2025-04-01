@@ -17,7 +17,7 @@ class Solution {
     public static TreeNode creatBst(int arr[],int st,int end){
     if(st>end){
         return null;  
-    }  
+    }   
     int mid=(st+end)/2; 
     TreeNode root=new TreeNode(arr[mid]); 
     root.left=creatBst(arr,st,mid-1);
