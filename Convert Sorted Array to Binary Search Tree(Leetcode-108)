@@ -15,7 +15,7 @@
  */
 class Solution {
     public static TreeNode creatBst(int arr[],int st,int end){  
-    if(st>end){
+    if(st>end){ 
         return null;   
     }   
     int mid=(st+end)/2; 
