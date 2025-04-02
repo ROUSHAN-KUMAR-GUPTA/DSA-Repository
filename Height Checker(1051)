@@ -4,7 +4,7 @@ class Solution {
         for(int i=0;i<heights.length;i++){
             exp[i]=heights[i];  
         }  
-        int count=0;         
+        int count=0;          
         Arrays.sort(exp);  
         for(int j=0;j<heights.length;j++){ 
             if(heights[j]!=exp[j]){ 
