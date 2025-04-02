@@ -5,7 +5,7 @@ class Solution {
             exp[i]=heights[i];  
         }  
         int count=0;           
-        Arrays.sort(exp);  
+        Arrays.sort(exp);   
         for(int j=0;j<heights.length;j++){  
             if(heights[j]!=exp[j]){ 
                 count++;
