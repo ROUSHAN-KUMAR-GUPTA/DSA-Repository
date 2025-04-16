@@ -10,7 +10,7 @@ class Solution {
                 ArrayList<Integer> li=new ArrayList<>();
                 li.add(-tar);
                 li.add(nums[i]);
-                li.add(nums[j]);
+                li.add(nums[j]); 
                 Li.add(li);
                // Li.add(Arrays.asList(-tar,nums[i],nums[j]));
                 while(i<j && nums[i]==nums[i+1]){
